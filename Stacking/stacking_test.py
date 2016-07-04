@@ -1,4 +1,4 @@
-"""from utils import * 
+from utils import * 
 from stacking_params import *
 import gc
 #########################################################################################
@@ -428,7 +428,7 @@ final_preds = final_preds.reshape(len(final_preds), 1)
 final_test_X = np.concatenate((final_test_X, final_preds), axis = 1)   # add this preds to this fold all  
 print("XGB-100 Done")   
 
-gc.collect()"""
+gc.collect()
 
 # knn 
 for n in [2**i for i in range(10)]:
